@@ -1,0 +1,12 @@
+on:
+  push:
+    branches:
+      - 'master'
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    name: Check python version
+    steps:
+      - uses: actions/checkout@v3
+      - name: Version
+        run: python --version
