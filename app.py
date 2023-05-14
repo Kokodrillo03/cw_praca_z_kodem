@@ -3,11 +3,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
-"""Index function"""
-
 
 @app.route('/')
 def index():
+    """Index function"""
     return '<h1>Hello WSB! Greetings from Flask!</h1>'
 
 
